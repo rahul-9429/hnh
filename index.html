@@ -4,6 +4,9 @@
         <title>Health and Hygiene</title>
        <!-- <link rel="icon" type="image/x-icon" href="images/home/logo.jpeg"> -->
         <link rel="stylesheet" href="front_page_css.css"> 
+        <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js"></script>
+
     </head>
     <body>
         <header class="header">
@@ -171,4 +174,27 @@ The state of complete physical, mental and spiritual well-being is called health
         </footer>
     -->
     </body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBQ6iCHZt8qwoGVYDl_i82Cice0B5PIrhA",
+          authDomain: "test-learn-eb66f.firebaseapp.com",
+          projectId: "test-learn-eb66f",
+          storageBucket: "test-learn-eb66f.appspot.com",
+          messagingSenderId: "618359847573",
+          appId: "1:618359847573:web:1f1cf94fbbbef54b5d799c",
+          measurementId: "G-RPBT0CLLLM"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </html>
